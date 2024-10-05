@@ -1,0 +1,46 @@
+img {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  padding: 10px;
+}
+
+.faces {
+  /* 주석 부분은 colum-reverse가 적용되어 위아래 이미지 배치가 바뀜 */
+  /* display: flex;
+  flex-direction: column-reverse; */
+  width: 350px;
+  margin: 0 auto;
+  margin-top: 350px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(239, 248, 255);
+}
+
+figure {
+  float: left;
+}
+
+.activate {
+  width: 20px;
+  height: 20px;
+  background-color: #dbdbdb;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: relative;
+  top: -35px;
+  left: 50px;
+}
+.non-activate {
+  width: 20px;
+  height: 20px;
+  background-color: #4cfe88;
+  border-radius: 50%;
+  border: 1px solid white;
+  position: relative;
+  top: -35px;
+  left: 50px;
+}
