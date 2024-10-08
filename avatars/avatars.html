@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Avatars | HTML/CSS 과제</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.9/static/pretendard-dynamic-subset.min.css" integrity="sha512-PsXUEGpaqdO9ConjXV1R21W0YqdV9dl3wxGAFnZFkGQ0/YGroVnvHv/aFehTx98C4fQRt6tqj/bvpAXsj5ztyQ==" crossorigin="anonymous" />
     <link rel="stylesheet" href="./styles/avatars.css" />
   </head>
   <body>
-    <div class="faces">
+    <!-- <div class="faces">
       <div class="row">
         <figure>
           <img src="./../assets/avatars/face1.jpg" alt="woman face1" />
@@ -45,6 +46,105 @@
           <div class="activate"></div>
         </figure>
       </div>
-    </div>
+    </div> -->
+
+    <h1>아바타 과제 해설</h1>
+    <!-- 아바타 컴포넌트 -->
+    <!-- 오프라인 컴포넌트 -->
+    <figure class="avatar is-offline">
+      <picture>
+        <source srcset="./../assets/avatars/face1.webp" type="image/webp" />
+        <img src="./../assets/avatars/face1.jpg" alt="" width="200" height="200" />
+      </picture>
+      <figcaption><span class="sr-only">슬비 유저 오프라인</span></figcaption>
+    </figure>
+
+    <!-- 온라인 컴포넌트 -->
+    <figure class="avatar is-online">
+      <picture>
+        <source srcset="./../assets/avatars/face5.webp" type="image/webp" />
+        <img src="./../assets/avatars/face5.jpg" alt="" width="200" height="200" />
+      </picture>
+      <figcaption><span class="sr-only">선범 유저 온라인</span></figcaption>
+    </figure>
+
+    <!-- 레이아웃 -->
+    <section class="avatars">
+      <h2 class="avatars-label">Avatars</h2>
+      <ul class="avatars-list">
+        <li>
+          <figure class="avatar is-offline">
+            <picture>
+              <source srcset="./../assets/avatars/face1.webp" type="image/webp" />
+              <img src="./../assets/avatars/face1.jpg" alt="" width="200" height="200" />
+            </picture>
+            <figcaption><span class="sr-only">슬비 유저 오프라인</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="avatar is-online">
+            <picture>
+              <source srcset="./../assets/avatars/face5.webp" type="image/webp" />
+              <img src="./../assets/avatars/face5.jpg" alt="" width="200" height="200" />
+            </picture>
+            <figcaption><span class="sr-only">선범 유저 온라인</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="avatar is-offline">
+            <picture>
+              <source srcset="./../assets/avatars/face1.webp" type="image/webp" />
+              <img src="./../assets/avatars/face1.jpg" alt="" width="200" height="200" />
+            </picture>
+            <figcaption><span class="sr-only">슬비 유저 오프라인</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="avatar is-online">
+            <picture>
+              <source srcset="./../assets/avatars/face5.webp" type="image/webp" />
+              <img src="./../assets/avatars/face5.jpg" alt="" width="200" height="200" />
+            </picture>
+            <figcaption><span class="sr-only">선범 유저 온라인</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="avatar is-offline">
+            <picture>
+              <source srcset="./../assets/avatars/face1.webp" type="image/webp" />
+              <img src="./../assets/avatars/face1.jpg" alt="" width="200" height="200" />
+            </picture>
+            <figcaption><span class="sr-only">슬비 유저 오프라인</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="avatar is-online">
+            <picture>
+              <source srcset="./../assets/avatars/face5.webp" type="image/webp" />
+              <img src="./../assets/avatars/face5.jpg" alt="" width="200" height="200" />
+            </picture>
+            <figcaption><span class="sr-only">선범 유저 온라인</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="avatar is-offline">
+            <picture>
+              <source srcset="./../assets/avatars/face1.webp" type="image/webp" />
+              <img src="./../assets/avatars/face1.jpg" alt="" width="200" height="200" />
+            </picture>
+            <figcaption><span class="sr-only">슬비 유저 오프라인</span></figcaption>
+          </figure>
+        </li>
+        <li>
+          <figure class="avatar is-online">
+            <picture>
+              <source srcset="./../assets/avatars/face5.webp" type="image/webp" />
+              <img src="./../assets/avatars/face5.jpg" alt="" width="200" height="200" />
+            </picture>
+            <figcaption><span class="sr-only">선범 유저 온라인</span></figcaption>
+          </figure>
+        </li>
+      </ul>
+    </section>
   </body>
 </html>

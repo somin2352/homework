@@ -1,20 +1,20 @@
-img {
+/* img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
   padding: 10px;
-}
+} */
 
-.faces {
-  /* 주석 부분은 colum-reverse가 적용되어 위아래 이미지 배치가 바뀜 */
-  /* display: flex;
+/* .faces { */
+/* 주석 부분은 colum-reverse가 적용되어 위아래 이미지 배치가 바뀜 */
+/* display: flex;
   flex-direction: column-reverse; */
-  width: 350px;
+/* width: 350px;
   margin: 0 auto;
   margin-top: 350px;
-}
+}  */
 
-* {
+/* * {
   margin: 0;
   padding: 0;
   background-color: rgb(239, 248, 255);
@@ -43,4 +43,99 @@ figure {
   position: relative;
   top: -35px;
   left: 50px;
+} */
+
+/* 과제 해설 */
+/* 스타일 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 1rem;
+  font: inherit;
 }
+
+body {
+  font-family: "Pretendard";
+}
+
+ul {
+  list-style: "";
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+/* 지역 변수 */
+.avatar {
+  --silver: #dbdbdb;
+  --green: #4cfe88;
+  --size: 64px;
+  --gap: 20px;
+
+  --offline: var(--silver, #dbdbdb);
+  --online: var(--green, #4cfe88);
+
+  inline-size: var(--size);
+  block-size: var(--size);
+  position: relative;
+
+  img {
+    max-inline-size: 100%;
+    block-size: auto;
+    border-radius: 50%;
+  }
+
+  figcaption {
+    --size: 20px;
+    background: #000;
+
+    inline-size: var(--size);
+    block-size: var(--size);
+    border-radius: 50%;
+    position: absolute;
+    inset-inline-end: 0;
+    inset-block-end: 0;
+    border: 2px solid #fff;
+  }
+
+  &.is-online figcaption {
+    background-color: var(--online);
+  }
+
+  &.is-offline figcaption {
+    background-color: var(--offline);
+  }
+}
+
+/* 레이아웃 */
+.avatars {
+  border: 1px solid #aaa;
+  padding: 50px;
+
+  ul {
+    display: flow-root;
+    inline-size: 360px;
+  }
+
+  li {
+    float: inline-start;
+    margin: 10px;
+  }
+}
+
+/* 브라우저 지원 환경에 따라 적용을 다르게 할 수 있도록 @supports */
+/* @supports (display: flex;){
+  .avatars{
+
+  }
+} */
