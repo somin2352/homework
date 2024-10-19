@@ -7,7 +7,7 @@
    - 각 카드 컴포넌트를 class="card-wrapper"인 div태그로 묶음.
    - 각 카드 컴포넌트의 구성은 제목, 설명 단락, 버튼으로 구성.
    - 아래쪽 4개의 컴포넌트는 grid 배치를 고려하여 class="grid-card"인 div태그로 묶음.
-     <img src="./image/apple-container.png" width="300px">
+     <img src="./image/apple-container.png">
 
 2. HTML 코드 구성
 
